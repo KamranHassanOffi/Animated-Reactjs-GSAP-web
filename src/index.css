@@ -7,3 +7,26 @@
     font-family: font2;
     src: url(../public/fonts/Lausanne-500.woff2);
 }
+
+.movex{
+    animation-name: MoveAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes MoveAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.movelink{
+    opacity: 0;
+    transition:all ease 0.3s;
+}
+.link:hover .movelink{
+    opacity: 1;
+}
